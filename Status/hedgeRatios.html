@@ -1,0 +1,155 @@
+<!---
+
+  knitr document: Generate HTML page of spread hedge ratios
+  
+--->
+
+<html>
+<head>
+<style type="text/css">.knitr.inline {
+  background-color: #f7f7f7;
+  border:solid 1px #B0B0B0;
+}
+.error {
+	font-weight: bold;
+	color: #FF0000;
+}, 
+.warning {
+	font-weight: bold;
+} 
+.message {
+	font-style: italic;
+} 
+.source, .output, .warning, .error, .message {
+	padding: 0em 1em;
+  border:solid 1px #F7F7F7;
+}
+.source {
+  background-color: #f7f7f7;
+}
+.rimage.left {
+  text-align: left;
+}
+.rimage.right {
+  text-align: right;
+}
+.rimage.center {
+  text-align: center;
+}
+
+.source {
+  color: #333333;
+}
+.background {
+  color: #F7F7F7;
+}
+
+.number {
+  color: #000000;
+}
+
+.functioncall {
+  color: #800054;
+  font-weight: bolder;
+}
+
+.string {
+  color: #9999FF;
+}
+
+.keyword {
+  font-weight: bolder;
+  color: black;
+}
+
+.argument {
+  color: #B04005;
+}
+
+.comment {
+  color: #2E9957;
+}
+
+.roxygencomment {
+  color: #707AB3;
+}
+
+.formalargs {
+  color: #B04005;
+}
+
+.eqformalargs {
+  color: #B04005;
+}
+
+.assignement {
+  font-weight: bolder;
+  color: #000000;
+}
+
+.package {
+  color: #96B525;
+}
+
+.slot {
+  font-style: italic;
+}
+
+.symbol {
+  color: #000000;
+}
+
+.prompt {
+  color: #333333;
+}
+</style>
+  <title>Hedge Ratios</title>
+
+  <!-- TODO: Somehow put this CSS into a library -->
+
+  <style type="text/css">
+      body {
+          background-color: lightyellow;
+      }
+      h1 {
+        text-align: center;
+      }
+      table {
+          border-collapse: collapse;
+          border: 1px solid;
+      }
+      th {
+          border: 1px solid;
+      }
+      td {
+          border: 1px solid;
+      }
+  </style>
+</head>
+
+<body>
+
+
+
+
+<! --- Begin document --->
+
+<h1>Hedge Ratios</h1>
+
+[1] "Spreads"
+[1] "<table border=\"1\">\n<tr>\n<td>Spread</td><td>HedgeRatios</td></tr>\n<tr>\n<td>AD/CD</td><td>0:1:-1.014</td></tr>\n<tr>\n<td>CU/SF</td><td>0:1:-1</td></tr>\n<tr>\n<td>FV/TY</td><td>0:3:-2</td></tr>\n<tr>\n<td>FV/US</td><td>0:3:-1</td></tr>\n<tr>\n<td>GC2/PL2</td><td>0:1:-2</td></tr>\n<tr>\n<td>GLD/GDX</td><td>0:1:-2.901</td></tr>\n<tr>\n<td>IR2/FV</td><td>0:1:-1</td></tr>\n<tr>\n<td>JY/GC2</td><td>0:1:-0.983</td></tr>\n<tr>\n<td>LC.1/FC.1</td><td>0:1:-1</td></tr>\n<tr>\n<td>LC.1/SM.1</td><td>0:2:-3</td></tr>\n<tr>\n<td>LH.1/LC.1</td><td>0:3:-2</td></tr>\n<tr>\n<td>LH.1/SM.1</td><td>0:1:-0.901</td></tr>\n<tr>\n<td>NI2/TY</td><td>0:1:-1</td></tr>\n<tr>\n<td>RB2.1/HO2.1</td><td>0:1:-1</td></tr>\n<tr>\n<td>RB2.2/HO2.2</td><td>0:1:-1</td></tr>\n<tr>\n<td>S.1/C.1</td><td>0:1:-2.08</td></tr>\n<tr>\n<td>^TNX/^FVX</td><td>0:1:-1</td></tr>\n<tr>\n<td>TU/FV</td><td>0:1:-1</td></tr>\n<tr>\n<td>TY.1/JNK</td><td>0:1:-3229.901</td></tr>\n<tr>\n<td>TY/US</td><td>0:2:-1</td></tr>\n<tr>\n<td>VX.2/VX.1</td><td>0:1:-1</td></tr>\n<tr>\n<td>VX.3/VX.2</td><td>0:1:-1</td></tr>\n<tr>\n<td>VX.4/VX.2</td><td>0:1:-1</td></tr>\n<tr>\n<td>W.1/C.1</td><td>0:1:-1.112</td></tr>\n</table>\n"
+[1] "Seasonals"
+[1] "<table border=\"1\">\n<tr>\n<td>Spread</td><td>HedgeRatios</td></tr>\n<tr>\n<td>GC2/PL2</td><td>0:1:-2</td></tr>\n<tr>\n<td>GLD/GDX</td><td>0:1:-2.901</td></tr>\n<tr>\n<td>LC.b/FC.b</td><td>0:1:-1</td></tr>\n<tr>\n<td>LC.b/SM.b</td><td>0:2:-3</td></tr>\n<tr>\n<td>LH.b/LC.b</td><td>0:3:-2</td></tr>\n<tr>\n<td>LH.b/SM.b</td><td>0:1:-1.052</td></tr>\n<tr>\n<td>RB2.b/HO2.b</td><td>0:1:-1</td></tr>\n<tr>\n<td>S.b/C.b</td><td>0:1:-2.068</td></tr>\n<tr>\n<td>W.b/C.b</td><td>0:1:-1.417</td></tr>\n</table>\n"
+
+
+
+<!-- TODO: Put this into a shared library of shared chunks -->
+
+<center>
+<small>
+  Generated on <code class="knitr inline">2013-04-16 07:19:06</code>
+</small>
+</center>
+
+</body>
+</html>
