@@ -18,17 +18,493 @@
 *********************** 
 
 *** Market data as of 2013-04-17 *** 
-Error in NextMethod(.Generic) : 
-  dims [product 21] do not match the length of object [0]
-Calls: viability ... seasonalData -> lapply -> FUN -> Ops.xts -> NextMethod
-Execution halted
+
+History = 5020 days 
+Maximum horizon = 20 days 
+
+*** Viable seasonals, long: *** 
+
+*** GC2/PL2 *** 
+
+Side = long 
+Horizon = 10 
+
+Sample statistics: 
+          Estimate   Lower    Upper
+ProbWin      0.650   0.442    0.817
+Mean      2196.500 455.476 3937.524
+StdDev    4502.889      NA       NA
+Sharpe       0.488      NA       NA
+AnnSharpe    2.330      NA       NA
+MedianMAE  820.000      NA       NA
+UpperMAE  4196.000      NA       NA
+MaxMAE    5350.000      NA       NA
+
+Bootstrap sample statistics: 
+          Estimate    Lower    Upper
+ProbWin      0.680    0.654    0.704
+Mean      1938.759 1735.223 2142.294
+StdDev    3907.440       NA       NA
+Sharpe       0.496       NA       NA
+AnnSharpe    2.370       NA       NA
+MedianMAE 1400.000       NA       NA
+UpperMAE  4094.000       NA       NA
+MaxMAE    8910.000       NA       NA
+
+Bootstrap sample statistics, winners: 
+          Estimate    Lower    Upper
+ProbWin      1.000    0.995    1.000
+Mean      3912.415 3723.329 4101.501
+StdDev    2991.388       NA       NA
+Sharpe       1.308       NA       NA
+AnnSharpe    6.248       NA       NA
+MedianMAE  470.000       NA       NA
+UpperMAE  2276.000       NA       NA
+MaxMAE    5500.000       NA       NA
+
+Bootstrap sample statistics, losers: 
+           Estimate     Lower     Upper
+ProbWin       0.000     0.000     0.011
+Mean      -2249.094 -2405.141 -2093.047
+StdDev     1692.152        NA        NA
+Sharpe       -1.329        NA        NA
+AnnSharpe    -6.349        NA        NA
+MedianMAE  3025.000        NA        NA
+UpperMAE   5621.000        NA        NA
+MaxMAE     8910.000        NA        NA
+
+Projected Sharpe ratios, by week: 
+       AnnSharpe
+Day 5      1.377
+Day 10     2.215
+
+     OptimalMAE AnnSharpe
+[1,]       6790  1.798707
+
+*** RB2.b/HO2.b *** 
+
+Side = long 
+Horizon = 10 
+
+Sample statistics: 
+          Estimate  Lower    Upper
+ProbWin      0.700  0.491    0.855
+Mean       879.900 16.132 1743.668
+StdDev    2234.004     NA       NA
+Sharpe       0.394     NA       NA
+AnnSharpe    1.881     NA       NA
+MedianMAE  201.600     NA       NA
+UpperMAE  1912.260     NA       NA
+MaxMAE    5224.800     NA       NA
+
+Bootstrap sample statistics: 
+          Estimate   Lower   Upper
+ProbWin      0.669   0.643   0.693
+Mean       824.390 728.039 920.741
+StdDev    1849.731      NA      NA
+Sharpe       0.446      NA      NA
+AnnSharpe    2.129      NA      NA
+MedianMAE  357.000      NA      NA
+UpperMAE  2037.000      NA      NA
+MaxMAE    5216.400      NA      NA
+
+Bootstrap sample statistics, winners: 
+          Estimate    Lower    Upper
+ProbWin      1.000    0.995    1.000
+Mean      1829.955 1749.437 1910.474
+StdDev    1263.435       NA       NA
+Sharpe       1.448       NA       NA
+AnnSharpe    6.919       NA       NA
+MedianMAE    0.000       NA       NA
+UpperMAE  1089.900       NA       NA
+MaxMAE    2578.800       NA       NA
+
+Bootstrap sample statistics, losers: 
+           Estimate     Lower     Upper
+ProbWin       0.000     0.000     0.011
+Mean      -1204.969 -1293.032 -1116.905
+StdDev      971.315        NA        NA
+Sharpe       -1.241        NA        NA
+AnnSharpe    -5.926        NA        NA
+MedianMAE  1545.600        NA        NA
+UpperMAE   2973.600        NA        NA
+MaxMAE     5216.400        NA        NA
+
+Projected Sharpe ratios, by week: 
+       AnnSharpe
+Day 5      3.278
+Day 10     1.938
+
+     OptimalMAE AnnSharpe
+[1,]     2318.4  1.691363
+
+*** Viable seasonals, short: *** 
+
+*** HO2.jun/HO2.dec *** 
+
+Side = short 
+Horizon = 15 
+
+Sample statistics: 
+          Estimate  Lower   Upper
+ProbWin      0.700  0.491   0.855
+Mean       289.380 87.769 490.991
+StdDev     521.436     NA      NA
+Sharpe       0.555     NA      NA
+AnnSharpe    2.198     NA      NA
+MedianMAE  161.700     NA      NA
+UpperMAE   576.240     NA      NA
+MaxMAE    1218.000     NA      NA
+
+Bootstrap sample statistics: 
+          Estimate   Lower   Upper
+ProbWin      0.694   0.669   0.718
+Mean       285.201 251.913 318.488
+StdDev     639.042      NA      NA
+Sharpe       0.446      NA      NA
+AnnSharpe    1.768      NA      NA
+MedianMAE  159.600      NA      NA
+UpperMAE   756.000      NA      NA
+MaxMAE    1646.400      NA      NA
+
+Bootstrap sample statistics, winners: 
+          Estimate   Lower   Upper
+ProbWin      0.999   0.992   1.000
+Mean       606.410 578.804 634.016
+StdDev     441.546      NA      NA
+Sharpe       1.373      NA      NA
+AnnSharpe    5.440      NA      NA
+MedianMAE   42.000      NA      NA
+UpperMAE   401.940      NA      NA
+MaxMAE     806.400      NA      NA
+
+Bootstrap sample statistics, losers: 
+          Estimate    Lower    Upper
+ProbWin      0.000    0.000    0.012
+Mean      -445.682 -479.046 -412.318
+StdDev     353.166       NA       NA
+Sharpe      -1.262       NA       NA
+AnnSharpe   -4.998       NA       NA
+MedianMAE  546.000       NA       NA
+UpperMAE  1037.400       NA       NA
+MaxMAE    1646.400       NA       NA
+
+Projected Sharpe ratios, by week: 
+       AnnSharpe
+Day 5     -2.109
+Day 10    -1.686
+Day 15    -3.075
+
+     OptimalMAE AnnSharpe
+[1,]      806.4  1.395703
+
+*** LC.b/FC.b *** 
+
+Side = short 
+Horizon = 20 
+
+Sample statistics: 
+          Estimate  Lower   Upper
+ProbWin      0.579  0.370   0.765
+Mean       423.816 14.918 832.714
+StdDev    1027.842     NA      NA
+Sharpe       0.412     NA      NA
+AnnSharpe    1.426     NA      NA
+MedianMAE  515.000     NA      NA
+UpperMAE  1203.000     NA      NA
+MaxMAE    1285.000     NA      NA
+
+Bootstrap sample statistics: 
+          Estimate   Lower  Upper
+ProbWin      0.635   0.609   0.66
+Mean       347.292 289.365 405.22
+StdDev    1112.084      NA     NA
+Sharpe       0.312      NA     NA
+AnnSharpe    1.080      NA     NA
+MedianMAE  540.000      NA     NA
+UpperMAE  1500.500      NA     NA
+MaxMAE    2957.500      NA     NA
+
+Bootstrap sample statistics, winners: 
+          Estimate   Lower    Upper
+ProbWin      1.000   0.994    1.000
+Mean      1014.326 967.403 1061.248
+StdDev     717.237      NA       NA
+Sharpe       1.414      NA       NA
+AnnSharpe    4.889      NA       NA
+MedianMAE  286.250      NA       NA
+UpperMAE   825.000      NA       NA
+MaxMAE    1960.000      NA       NA
+
+Bootstrap sample statistics, losers: 
+          Estimate    Lower    Upper
+ProbWin      0.000    0.000    0.010
+Mean      -811.336 -864.203 -758.468
+StdDev     612.489       NA       NA
+Sharpe      -1.325       NA       NA
+AnnSharpe   -4.580       NA       NA
+MedianMAE 1115.000       NA       NA
+UpperMAE  1972.000       NA       NA
+MaxMAE    2957.500       NA       NA
+
+Projected Sharpe ratios, by week: 
+       AnnSharpe
+Day 5      0.965
+Day 10    -0.966
+Day 15    -0.981
+Day 20    -1.403
+
+     OptimalMAE AnnSharpe
+[1,]     1027.5 0.7315361
+
+*** LC.b/SM.b *** 
+
+Side = short 
+Horizon = 15 
+
+Sample statistics: 
+          Estimate   Lower    Upper
+ProbWin      0.579   0.370    0.765
+Mean      1607.895 155.756 3060.034
+StdDev    3650.228      NA       NA
+Sharpe       0.440      NA       NA
+AnnSharpe    1.745      NA       NA
+MedianMAE 1670.000      NA       NA
+UpperMAE  3768.000      NA       NA
+MaxMAE    6180.000      NA       NA
+
+Bootstrap sample statistics: 
+           Estimate    Lower    Upper
+ProbWin       0.612    0.585    0.637
+Mean       1736.406 1468.600 2004.213
+StdDev     5141.301       NA       NA
+Sharpe        0.338       NA       NA
+AnnSharpe     1.338       NA       NA
+MedianMAE  1830.000       NA       NA
+UpperMAE   6004.000       NA       NA
+MaxMAE    14000.000       NA       NA
+
+Bootstrap sample statistics, winners: 
+          Estimate    Lower    Upper
+ProbWin      0.998    0.991    1.000
+Mean      4948.039 4716.786 5179.292
+StdDev    3472.778       NA       NA
+Sharpe       1.425       NA       NA
+AnnSharpe    5.643       NA       NA
+MedianMAE  765.000       NA       NA
+UpperMAE  3099.000       NA       NA
+MaxMAE    8770.000       NA       NA
+
+Bootstrap sample statistics, losers: 
+           Estimate     Lower     Upper
+ProbWin       0.000     0.000     0.009
+Mean      -3342.455 -3564.787 -3120.122
+StdDev     2652.699        NA        NA
+Sharpe       -1.260        NA        NA
+AnnSharpe    -4.991        NA        NA
+MedianMAE  4100.000        NA        NA
+UpperMAE   8094.000        NA        NA
+MaxMAE    14000.000        NA        NA
+
+Projected Sharpe ratios, by week: 
+       AnnSharpe
+Day 5     -2.505
+Day 10    -1.823
+Day 15    -1.662
+
+     OptimalMAE AnnSharpe
+[1,]       4610  1.008985
+
+*** NG.jul/NG.jan *** 
+
+Side = short 
+Horizon = 20 
+
+Sample statistics: 
+          Estimate   Lower    Upper
+ProbWin      0.700   0.491    0.855
+Mean      1080.000 114.852 2045.148
+StdDev    2496.206      NA       NA
+Sharpe       0.433      NA       NA
+AnnSharpe    1.496      NA       NA
+MedianMAE  275.000      NA       NA
+UpperMAE  1045.000      NA       NA
+MaxMAE    1470.000      NA       NA
+
+Bootstrap sample statistics: 
+          Estimate   Lower    Upper
+ProbWin      0.739   0.715    0.761
+Mean      1090.070 997.690 1182.450
+StdDev    1773.490      NA       NA
+Sharpe       0.615      NA       NA
+AnnSharpe    2.125      NA       NA
+MedianMAE  270.000      NA       NA
+UpperMAE  1542.000      NA       NA
+MaxMAE    6170.000      NA       NA
+
+Bootstrap sample statistics, winners: 
+          Estimate    Lower    Upper
+ProbWin      1.000    0.995    1.000
+Mean      1867.846 1792.660 1943.031
+StdDev    1240.196       NA       NA
+Sharpe       1.506       NA       NA
+AnnSharpe    5.207       NA       NA
+MedianMAE  130.000       NA       NA
+UpperMAE   640.000       NA       NA
+MaxMAE    1870.000       NA       NA
+
+Bootstrap sample statistics, losers: 
+           Estimate     Lower     Upper
+ProbWin       0.000     0.000     0.014
+Mean      -1109.157 -1218.293 -1000.022
+StdDev     1068.093        NA        NA
+Sharpe       -1.038        NA        NA
+AnnSharpe    -3.590        NA        NA
+MedianMAE  1240.000        NA        NA
+UpperMAE   2890.000        NA        NA
+MaxMAE     6170.000        NA        NA
+
+Projected Sharpe ratios, by week: 
+       AnnSharpe
+Day 5     -2.619
+Day 10    -1.995
+Day 15    -2.334
+Day 20    -1.434
+
+     OptimalMAE AnnSharpe
+[1,]        810  2.109534
+
+*** RB2.jun/RB2.dec *** 
+
+Side = short 
+Horizon = 20 
+
+Sample statistics: 
+          Estimate   Lower    Upper
+ProbWin      0.667   0.464    0.826
+Mean      1836.000 258.368 3413.632
+StdDev    4191.769      NA       NA
+Sharpe       0.438      NA       NA
+AnnSharpe    1.514      NA       NA
+MedianMAE 1192.800      NA       NA
+UpperMAE  6606.600      NA       NA
+MaxMAE    8261.400      NA       NA
+
+Bootstrap sample statistics: 
+           Estimate    Lower    Upper
+ProbWin       0.501    0.474    0.527
+Mean       1649.734 1309.638 1989.829
+StdDev     6529.095       NA       NA
+Sharpe        0.253       NA       NA
+AnnSharpe     0.874       NA       NA
+MedianMAE  2041.200       NA       NA
+UpperMAE   5825.400       NA       NA
+MaxMAE    11235.000       NA       NA
+
+Bootstrap sample statistics, winners: 
+          Estimate    Lower    Upper
+ProbWin      1.000    0.993    1.000
+Mean      6492.814 6073.686 6911.941
+StdDev    5687.184       NA       NA
+Sharpe       1.142       NA       NA
+AnnSharpe    3.947       NA       NA
+MedianMAE 1008.000       NA       NA
+UpperMAE  3697.260       NA       NA
+MaxMAE    9538.200       NA       NA
+
+Bootstrap sample statistics, losers: 
+           Estimate     Lower     Upper
+ProbWin       0.000     0.000     0.007
+Mean      -3203.051 -3381.844 -3024.259
+StdDev     2423.619        NA        NA
+Sharpe       -1.322        NA        NA
+AnnSharpe    -4.569        NA        NA
+MedianMAE  3036.600        NA        NA
+UpperMAE   7199.640        NA        NA
+MaxMAE    11235.000        NA        NA
+
+Projected Sharpe ratios, by week: 
+       AnnSharpe
+Day 5      0.797
+Day 10     0.755
+Day 15     1.005
+Day 20    -1.599
+
+     OptimalMAE AnnSharpe
+[1,]     5464.2 0.4269599
+
+*** S.nov/S.jul *** 
+
+Side = short 
+Horizon = 15 
+
+Sample statistics: 
+          Estimate Lower   Upper
+ProbWin      0.632 0.419   0.807
+Mean       257.237 9.233 505.241
+StdDev     623.405    NA      NA
+Sharpe       0.413    NA      NA
+AnnSharpe    1.634    NA      NA
+MedianMAE  175.000    NA      NA
+UpperMAE  1220.000    NA      NA
+MaxMAE    1437.500    NA      NA
+
+Bootstrap sample statistics: 
+          Estimate   Lower   Upper
+ProbWin      0.578   0.551   0.604
+Mean       302.415 245.077 359.753
+StdDev    1100.759      NA      NA
+Sharpe       0.275      NA      NA
+AnnSharpe    1.088      NA      NA
+MedianMAE  337.500      NA      NA
+UpperMAE  1300.000      NA      NA
+MaxMAE    3812.500      NA      NA
+
+Bootstrap sample statistics, winners: 
+          Estimate   Lower    Upper
+ProbWin      0.991   0.981    0.996
+Mean      1041.387 992.367 1090.408
+StdDev     717.828      NA       NA
+Sharpe       1.451      NA       NA
+AnnSharpe    5.746      NA       NA
+MedianMAE   75.000      NA       NA
+UpperMAE   536.250      NA       NA
+MaxMAE    1300.000      NA       NA
+
+Bootstrap sample statistics, losers: 
+          Estimate    Lower    Upper
+ProbWin      0.000    0.000    0.009
+Mean      -728.957 -777.186 -680.728
+StdDev     597.425       NA       NA
+Sharpe      -1.220       NA       NA
+AnnSharpe   -4.833       NA       NA
+MedianMAE  875.000       NA       NA
+UpperMAE  1717.500       NA       NA
+MaxMAE    3812.500       NA       NA
+
+Projected Sharpe ratios, by week: 
+       AnnSharpe
+Day 5     -0.707
+Day 10    -2.153
+Day 15    -1.334
+
+     OptimalMAE AnnSharpe
+[1,]   337.5001  1.073393
+
+*** Non-viable seasonals: *** 
+- C.dec/C.jul 
+- LH.b/LC.b 
+- LH.b/SM.b 
+- S.b/C.b 
+- W.dec/W.jul 
+- W.b/C.b 
 
 </pre>
 <br />
 <br />
 <small>
 <center>
-Generated at 2013-04-18 03:10:05.660193
+Generated at 2013-04-18 08:10:14.864758
 </center>
 </small>
 </body>
