@@ -18,17 +18,556 @@
 *********************** 
 
 *** Market data as of 2013-06-14 *** 
-Error in NextMethod(.Generic) : 
-  dims [product 21] do not match the length of object [0]
-Calls: viability ... seasonalData -> lapply -> FUN -> Ops.xts -> NextMethod
-Execution halted
+
+History = 5020 days 
+Maximum horizon = 20 days 
+
+*** Viable seasonals, long: *** 
+
+*** C.jul/C.dec *** 
+
+Close: 1262.5 (-12.5) as of 2013-06-14
+Hedge ratios: +0 : +1 : -1 
+
+Side = long 
+Horizon = 15 
+
+Sample statistics: 
+          Estimate Lower   Upper
+ProbWin      0.737 0.522   0.884
+Mean       141.447 7.520 275.375
+StdDev     336.652    NA      NA
+Sharpe       0.420    NA      NA
+AnnSharpe    1.664    NA      NA
+MedianMAE   25.000    NA      NA
+UpperMAE   240.000    NA      NA
+MaxMAE     887.500    NA      NA
+
+Bootstrap sample statistics: 
+          Estimate   Lower   Upper
+ProbWin      0.715   0.690   0.738
+Mean       137.375 124.747 150.003
+StdDev     242.425      NA      NA
+Sharpe       0.567      NA      NA
+AnnSharpe    2.244      NA      NA
+MedianMAE   50.000      NA      NA
+UpperMAE   262.500      NA      NA
+MaxMAE     637.500      NA      NA
+
+Bootstrap sample statistics, winners: 
+          Estimate   Lower   Upper
+ProbWin      1.000   0.995   1.000
+Mean       252.048 241.421 262.675
+StdDev     172.410      NA      NA
+Sharpe       1.462      NA      NA
+AnnSharpe    5.790      NA      NA
+MedianMAE   25.000      NA      NA
+UpperMAE   137.500      NA      NA
+MaxMAE     337.500      NA      NA
+
+Bootstrap sample statistics, losers: 
+          Estimate    Lower    Upper
+ProbWin      0.000    0.000    0.013
+Mean      -149.912 -162.281 -137.543
+StdDev     126.535       NA       NA
+Sharpe      -1.185       NA       NA
+AnnSharpe   -4.692       NA       NA
+MedianMAE  200.000       NA       NA
+UpperMAE   412.500       NA       NA
+MaxMAE     637.500       NA       NA
+
+Projected Sharpe ratios, by week: 
+       AnnSharpe
+Day 5      0.641
+Day 10     1.567
+Day 15     1.536
+
+     OptimalMAE AnnSharpe
+[1,]        225  1.799816
+
+Kelly analysis (bootstrapped data): 
+                    Estimate Lower Upper
+Prob of winning        0.698    NA    NA
+Wager                137.500    NA    NA
+Expected win         226.829    NA    NA
+Kelly fraction         0.514    NA    NA
+Half Kelly             0.257    NA    NA
+Capital            16250.000    NA    NA
+Kelly capital       8359.768    NA    NA
+Kelly units           60.798    NA    NA
+Half Kelly capital  4179.884    NA    NA
+Half Kelly units      30.399    NA    NA
+
+*** GC2/PL2 *** 
+
+Close: -5680 (+1620) as of 2013-06-14
+Hedge ratios: +0 : +1 : -2 
+
+Side = long 
+Horizon = 15 
+
+Sample statistics: 
+          Estimate  Lower    Upper
+ProbWin      0.700  0.491    0.855
+Mean      1397.000 82.470 2711.530
+StdDev    3399.830     NA       NA
+Sharpe       0.411     NA       NA
+AnnSharpe    1.627     NA       NA
+MedianMAE  820.000     NA       NA
+UpperMAE  4280.000     NA       NA
+MaxMAE    5520.000     NA       NA
+
+Bootstrap sample statistics: 
+           Estimate    Lower    Upper
+ProbWin       0.625    0.599    0.650
+Mean       1399.399 1134.331 1664.467
+StdDev     5088.731       NA       NA
+Sharpe        0.275       NA       NA
+AnnSharpe     1.089       NA       NA
+MedianMAE  1120.000       NA       NA
+UpperMAE   5630.000       NA       NA
+MaxMAE    19270.000       NA       NA
+
+Bootstrap sample statistics, winners: 
+          Estimate    Lower   Upper
+ProbWin      1.000    0.994    1.00
+Mean      4294.952 4055.094 4534.81
+StdDev    3637.252       NA      NA
+Sharpe       1.181       NA      NA
+AnnSharpe    4.677       NA      NA
+MedianMAE  440.000       NA      NA
+UpperMAE  2414.000       NA      NA
+MaxMAE    9390.000       NA      NA
+
+Bootstrap sample statistics, losers: 
+           Estimate     Lower     Upper
+ProbWin       0.000     0.000     0.010
+Mean      -3418.800 -3685.319 -3152.281
+StdDev     3129.964        NA        NA
+Sharpe       -1.092        NA        NA
+AnnSharpe    -4.326        NA        NA
+MedianMAE  3720.000        NA        NA
+UpperMAE   8282.000        NA        NA
+MaxMAE    19270.000        NA        NA
+
+Projected Sharpe ratios, by week: 
+       AnnSharpe
+Day 5      1.154
+Day 10     2.180
+Day 15     1.697
+
+     OptimalMAE AnnSharpe
+[1,]       1070  1.022483
+
+Kelly analysis (bootstrapped data): 
+                    Estimate Lower Upper
+Prob of winning        0.675    NA    NA
+Wager               2414.000    NA    NA
+Expected win        3501.840    NA    NA
+Kelly fraction         0.450    NA    NA
+Half Kelly             0.225    NA    NA
+Capital            16250.000    NA    NA
+Kelly capital       7319.179    NA    NA
+Kelly units            3.032    NA    NA
+Half Kelly capital  3659.590    NA    NA
+Half Kelly units       1.516    NA    NA
+
+*** NG.apr/NG.oct *** 
+
+Close: 1350 (+180) as of 2013-06-14
+Hedge ratios: +0 : +1 : -1 
+
+Side = long 
+Horizon = 20 
+
+Sample statistics: 
+          Estimate    Lower    Upper
+ProbWin      0.800    0.594    0.923
+Mean      2226.000 1113.749 3338.251
+StdDev    2876.665       NA       NA
+Sharpe       0.774       NA       NA
+AnnSharpe    2.675       NA       NA
+MedianMAE 1150.000       NA       NA
+UpperMAE  2372.000       NA       NA
+MaxMAE    2950.000       NA       NA
+
+Bootstrap sample statistics: 
+          Estimate    Lower    Upper
+ProbWin      0.783    0.760    0.804
+Mean      2151.191 2009.893 2292.490
+StdDev    2712.624       NA       NA
+Sharpe       0.793       NA       NA
+AnnSharpe    2.742       NA       NA
+MedianMAE  880.000       NA       NA
+UpperMAE  2750.000       NA       NA
+MaxMAE    6400.000       NA       NA
+
+Bootstrap sample statistics, winners: 
+          Estimate    Lower    Upper
+ProbWin      1.000    0.995    1.000
+Mean      3142.494 3018.444 3266.543
+StdDev    2106.468       NA       NA
+Sharpe       1.492       NA       NA
+AnnSharpe    5.158       NA       NA
+MedianMAE  575.000       NA       NA
+UpperMAE  1810.000       NA       NA
+MaxMAE    5040.000       NA       NA
+
+Bootstrap sample statistics, losers: 
+           Estimate     Lower     Upper
+ProbWin       0.000     0.000     0.017
+Mean      -1421.152 -1561.933 -1280.371
+StdDev     1255.398        NA        NA
+Sharpe       -1.132        NA        NA
+AnnSharpe    -3.914        NA        NA
+MedianMAE  2220.000        NA        NA
+UpperMAE   4074.000        NA        NA
+MaxMAE     6400.000        NA        NA
+
+Projected Sharpe ratios, by week: 
+       AnnSharpe
+Day 5     -0.036
+Day 10     2.083
+Day 15     2.219
+Day 20     2.707
+
+     OptimalMAE AnnSharpe
+[1,]       4440  2.337381
+
+Kelly analysis (bootstrapped data): 
+                    Estimate Lower Upper
+Prob of winning        0.788    NA    NA
+Wager               1810.000    NA    NA
+Expected win        2853.926    NA    NA
+Kelly fraction         0.653    NA    NA
+Half Kelly             0.327    NA    NA
+Capital            16250.000    NA    NA
+Kelly capital      10614.497    NA    NA
+Kelly units            5.864    NA    NA
+Half Kelly capital  5307.249    NA    NA
+Half Kelly units       2.932    NA    NA
+
+*** S.b/C.b *** 
+
+Close: 7867.658 (-880.6) as of 2013-06-14
+Hedge ratios: -0 : +1 : -2.075 
+
+Side = long 
+Horizon = 20 
+
+Sample statistics: 
+          Estimate   Lower    Upper
+ProbWin      0.789   0.577    0.919
+Mean      2198.998 410.884 3987.112
+StdDev    4494.764      NA       NA
+Sharpe       0.489      NA       NA
+AnnSharpe    1.691      NA       NA
+MedianMAE  634.993      NA       NA
+UpperMAE  4329.362      NA       NA
+MaxMAE    7151.852      NA       NA
+
+Bootstrap sample statistics: 
+           Estimate    Lower    Upper
+ProbWin       0.703    0.678    0.726
+Mean       2283.888 2081.056 2486.719
+StdDev     3893.918       NA       NA
+Sharpe        0.587       NA       NA
+AnnSharpe     2.028       NA       NA
+MedianMAE   893.742       NA       NA
+UpperMAE   3690.130       NA       NA
+MaxMAE    10638.264       NA       NA
+
+Bootstrap sample statistics, winners: 
+          Estimate    Lower    Upper
+ProbWin      1.000    0.995    1.000
+Mean      4162.068 3980.005 4344.132
+StdDev    2928.801       NA       NA
+Sharpe       1.421       NA       NA
+AnnSharpe    4.913       NA       NA
+MedianMAE  379.698       NA       NA
+UpperMAE  2010.110       NA       NA
+MaxMAE    5468.858       NA       NA
+
+Bootstrap sample statistics, losers: 
+           Estimate     Lower     Upper
+ProbWin       0.000     0.000     0.012
+Mean      -2155.448 -2311.828 -1999.069
+StdDev     1633.313        NA        NA
+Sharpe       -1.320        NA        NA
+AnnSharpe    -4.562        NA        NA
+MedianMAE  2945.941        NA        NA
+UpperMAE   5106.411        NA        NA
+MaxMAE    10638.264        NA        NA
+
+Projected Sharpe ratios, by week: 
+       AnnSharpe
+Day 5      3.403
+Day 10     2.126
+Day 15     1.522
+Day 20     1.625
+
+     OptimalMAE AnnSharpe
+[1,]   6534.005  1.631821
+
+Kelly analysis (bootstrapped data): 
+                    Estimate Lower Upper
+Prob of winning        0.713    NA    NA
+Wager               2010.110    NA    NA
+Expected win        3777.445    NA    NA
+Kelly fraction         0.560    NA    NA
+Half Kelly             0.280    NA    NA
+Capital            16250.000    NA    NA
+Kelly capital       9097.353    NA    NA
+Kelly units            4.526    NA    NA
+Half Kelly capital  4548.677    NA    NA
+Half Kelly units       2.263    NA    NA
+
+*** Viable seasonals, short: *** 
+
+*** LH.b/LC.b *** 
+
+Close: 22970 (-150) as of 2013-06-14
+Hedge ratios: +0 : +3 : -2 
+
+Side = short 
+Horizon = 10 
+
+Sample statistics: 
+          Estimate   Lower    Upper
+ProbWin      0.632   0.419    0.807
+Mean      1585.263 269.127 2901.399
+StdDev    3308.359      NA       NA
+Sharpe       0.479      NA       NA
+AnnSharpe    2.289      NA       NA
+MedianMAE 1690.000      NA       NA
+UpperMAE  4216.000      NA       NA
+MaxMAE    7530.000      NA       NA
+
+Bootstrap sample statistics: 
+          Estimate    Lower    Upper
+ProbWin      0.697    0.672    0.721
+Mean      1577.007 1407.806 1746.208
+StdDev    3248.285       NA       NA
+Sharpe       0.485       NA       NA
+AnnSharpe    2.319       NA       NA
+MedianMAE 1510.000       NA       NA
+UpperMAE  4492.000       NA       NA
+MaxMAE    9600.000       NA       NA
+
+Bootstrap sample statistics, winners: 
+          Estimate    Lower    Upper
+ProbWin      1.000    0.995    1.000
+Mean      3207.529 3066.423 3348.634
+StdDev    2260.173       NA       NA
+Sharpe       1.419       NA       NA
+AnnSharpe    6.779       NA       NA
+MedianMAE  750.000       NA       NA
+UpperMAE  2675.000       NA       NA
+MaxMAE    5200.000       NA       NA
+
+Bootstrap sample statistics, losers: 
+           Estimate     Lower     Upper
+ProbWin       0.000     0.000     0.012
+Mean      -2168.350 -2330.071 -2006.628
+StdDev     1706.191        NA        NA
+Sharpe       -1.271        NA        NA
+AnnSharpe    -6.071        NA        NA
+MedianMAE  3750.000        NA        NA
+UpperMAE   5830.000        NA        NA
+MaxMAE     9600.000        NA        NA
+
+Projected Sharpe ratios, by week: 
+       AnnSharpe
+Day 5     -0.857
+Day 10     1.941
+
+     OptimalMAE AnnSharpe
+[1,]       7830  1.791952
+
+Kelly analysis (bootstrapped data): 
+                    Estimate Lower Upper
+Prob of winning        0.712    NA    NA
+Wager               2675.000    NA    NA
+Expected win        2871.378    NA    NA
+Kelly fraction         0.443    NA    NA
+Half Kelly             0.222    NA    NA
+Capital            16250.000    NA    NA
+Kelly capital       7201.024    NA    NA
+Kelly units            2.692    NA    NA
+Half Kelly capital  3600.512    NA    NA
+Half Kelly units       1.346    NA    NA
+
+*** NG.jan/NG.jul *** 
+
+Close: 1140 (-200) as of 2013-06-14
+Hedge ratios: +0 : +1 : -1 
+
+Side = short 
+Horizon = 20 
+
+Sample statistics: 
+          Estimate   Lower    Upper
+ProbWin      0.800   0.594    0.923
+Mean      1592.500 827.929 2357.071
+StdDev    1977.446      NA       NA
+Sharpe       0.805      NA       NA
+AnnSharpe    2.784      NA       NA
+MedianMAE  515.000      NA       NA
+UpperMAE  1746.000      NA       NA
+MaxMAE    3670.000      NA       NA
+
+Bootstrap sample statistics: 
+          Estimate    Lower    Upper
+ProbWin      0.840    0.819    0.858
+Mean      1740.521 1639.972 1841.069
+StdDev    1930.317       NA       NA
+Sharpe       0.902       NA       NA
+AnnSharpe    3.117       NA       NA
+MedianMAE  520.000       NA       NA
+UpperMAE  2070.000       NA       NA
+MaxMAE    6700.000       NA       NA
+
+Bootstrap sample statistics, winners: 
+          Estimate    Lower    Upper
+ProbWin      1.000    0.996    1.000
+Mean      2294.565 2208.095 2381.035
+StdDev    1521.027       NA       NA
+Sharpe       1.509       NA       NA
+AnnSharpe    5.215       NA       NA
+MedianMAE  430.000       NA       NA
+UpperMAE  1240.000       NA       NA
+MaxMAE    4490.000       NA       NA
+
+Bootstrap sample statistics, losers: 
+           Estimate     Lower     Upper
+ProbWin       0.000     0.000     0.022
+Mean      -1164.750 -1300.751 -1028.749
+StdDev     1039.768        NA        NA
+Sharpe       -1.120        NA        NA
+AnnSharpe    -3.873        NA        NA
+MedianMAE  1925.000        NA        NA
+UpperMAE   4161.000        NA        NA
+MaxMAE     6700.000        NA        NA
+
+Projected Sharpe ratios, by week: 
+       AnnSharpe
+Day 5     -1.951
+Day 10     1.565
+Day 15     2.385
+Day 20     2.762
+
+     OptimalMAE AnnSharpe
+[1,]       5130  2.718255
+
+Kelly analysis (bootstrapped data): 
+                    Estimate Lower Upper
+Prob of winning        0.799    NA    NA
+Wager               1240.000    NA    NA
+Expected win        2239.073    NA    NA
+Kelly fraction         0.687    NA    NA
+Half Kelly             0.344    NA    NA
+Capital            16250.000    NA    NA
+Kelly capital      11169.818    NA    NA
+Kelly units            9.008    NA    NA
+Half Kelly capital  5584.909    NA    NA
+Half Kelly units       4.504    NA    NA
+
+*** NG.oct/NG.jan *** 
+
+Close: -3190 (-10) as of 2013-06-14
+Hedge ratios: +0 : +1 : -1 
+
+Side = short 
+Horizon = 20 
+
+Sample statistics: 
+          Estimate   Lower    Upper
+ProbWin      0.700   0.491    0.855
+Mean       842.000 196.310 1487.690
+StdDev    1669.978      NA       NA
+Sharpe       0.504      NA       NA
+AnnSharpe    1.743      NA       NA
+MedianMAE  395.000      NA       NA
+UpperMAE  1033.000      NA       NA
+MaxMAE    1640.000      NA       NA
+
+Bootstrap sample statistics: 
+          Estimate   Lower  Upper
+ProbWin      0.727   0.702   0.75
+Mean       843.824 767.427 920.22
+StdDev    1466.647      NA     NA
+Sharpe       0.575      NA     NA
+AnnSharpe    1.989      NA     NA
+MedianMAE  380.000      NA     NA
+UpperMAE  1382.000      NA     NA
+MaxMAE    3250.000      NA     NA
+
+Bootstrap sample statistics, winners: 
+          Estimate    Lower    Upper
+ProbWin      1.000    0.995    1.000
+Mean      1515.675 1450.542 1580.808
+StdDev    1065.582       NA       NA
+Sharpe       1.422       NA       NA
+AnnSharpe    4.918       NA       NA
+MedianMAE  190.000       NA       NA
+UpperMAE   925.000       NA       NA
+MaxMAE    1790.000       NA       NA
+
+Bootstrap sample statistics, losers: 
+          Estimate   Lower    Upper
+ProbWin      0.000     0.0    0.013
+Mean      -942.857 -1010.4 -875.315
+StdDev     676.160      NA       NA
+Sharpe      -1.394      NA       NA
+AnnSharpe   -4.821      NA       NA
+MedianMAE 1080.000      NA       NA
+UpperMAE  2018.000      NA       NA
+MaxMAE    3250.000      NA       NA
+
+Projected Sharpe ratios, by week: 
+       AnnSharpe
+Day 5      1.539
+Day 10     1.586
+Day 15     1.667
+Day 20     1.850
+
+     OptimalMAE AnnSharpe
+[1,]       1690  1.660095
+
+Kelly analysis (bootstrapped data): 
+                    Estimate Lower Upper
+Prob of winning        0.758    NA    NA
+Wager                925.000    NA    NA
+Expected win        1307.067    NA    NA
+Kelly fraction         0.586    NA    NA
+Half Kelly             0.293    NA    NA
+Capital            16250.000    NA    NA
+Kelly capital       9527.782    NA    NA
+Kelly units           10.300    NA    NA
+Half Kelly capital  4763.891    NA    NA
+Half Kelly units       5.150    NA    NA
+
+*** Non-viable seasonals: *** 
+- HO2.jun/HO2.dec 
+- HO2.mar/HO2.sep 
+- HO2.sep/HO2.dec 
+- LC.b/FC.b 
+- LC.b/SM.b 
+- LH.b/SM.b 
+- RB2.b/HO2.b 
+- RB2.jun/RB2.dec 
+- RB2.mar/RB2.jun 
+- RB2.mar/RB2.sep 
+- S.jul/S.nov 
+- W.jul/W.dec 
+- W.b/C.b 
 
 </pre>
 <br />
 <br />
 <small>
 <center>
-Generated at 2013-06-15 03:10:04.234936
+Generated at 2013-06-15 18:16:55.285236
 </center>
 </small>
 </body>
